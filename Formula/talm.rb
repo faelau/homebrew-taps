@@ -10,19 +10,19 @@ class Talm < Formula
     if OS.mac? && Hardware::CPU.intel?
       url "https://github.com/aenix-io/talm/releases/download/v#{version}/talm-darwin-amd64",
         verified: "github.com/aenix-io/talm/"
-      sha256 "67e66671832f475d33dfd46a6cc294bb8be3e883289bea854cf31bd5ed5c6e7a"
+      sha256 "17930c44916dd431621916b6c6a6ef786a96f6a13dcd46d0501867e2ea43174b"
     elsif OS.mac? && Hardware::CPU.arm?
       url "https://github.com/aenix-io/talm/releases/download/v#{version}/talm-darwin-arm64",
         verified: "github.com/aenix-io/talm/"
-      sha256 "b66e32ab3d69b56f6f74bddc40fe2053c3eb8349f0446e9dc710769526c1b596"
+      sha256 "6a48996dd9d6896d3e647f0baa644529c59e37fa35388ede5b16f7dd780026ea"
     elsif OS.linux? && Hardware::CPU.intel?
       url "https://github.com/aenix-io/talm/releases/download/v#{version}/talm-linux-amd64",
         verified: "github.com/aenix-io/talm/"
-      sha256 "3d1a9ad04e391018bdae41bac210471cd477afbd3c44791f288c5992294b20a8"
+      sha256 "250583e1d0d899897b7f276c2e3e14c9de068fc5b89ed6106bc2f7562b2283b5"
     elsif OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/aenix-io/talm/releases/download/v#{version}/talm-linux-arm64",
         verified: "github.com/aenix-io/talm/"
-      sha256 "2a6df9b62f9ddeaf65a4c07b1acc22623fb0cd9432e8d84ab11f73e1579f1a6f"
+      sha256 "8454b77ee98cc7bae9ca349af096f3ac537d72005f59014cc6c60f6fde0c1e1c"
     else
       odie "Unexpected platform!"
     end
