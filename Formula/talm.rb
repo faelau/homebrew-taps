@@ -4,7 +4,7 @@
 class Talm < Formula
     desc "Manage Talos Linux the GitOps Way!"
     homepage "https://github.com/aenix-io/talm/"
-    version "0.7.0"
+    version "0.8.2"
     license "MPL-2.0"
   
     if OS.mac? && Hardware::CPU.intel?
